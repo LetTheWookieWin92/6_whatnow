@@ -12,3 +12,10 @@ html,
   max-width: 1920px;
   background-color: #f5f5f5;
 }
+
+.backgroundImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

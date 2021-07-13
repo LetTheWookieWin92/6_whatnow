@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	appBar: {
         alignItems: 'center',
+
     }
 }));
 
@@ -24,7 +25,7 @@ const NavigationBar = ({ backLabel, backPressed, showBack }) => {
 
     return ( 
         <React.Fragment>
-            <AppBar color="secondary" position="static" className={classes.appBar}>
+            <AppBar color="transparent" position="static" elevation={0} className={classes.appBar}>
                 <Toolbar>
                     {showBack === "Yes" && (
                         <IconButton edge="start" color="inherit" aria-label="menu" onClick={ () => {backPressed("Home")}} >

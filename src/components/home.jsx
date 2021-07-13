@@ -11,7 +11,7 @@ const Home = () => {
     return ( 
         <ThemeProvider theme={theme}>
             <NavigationBar textLabel="WhatNow?"  showBack="No"/>
-            <h1>hi</h1>
+            
         </ThemeProvider>
      );
 }
