@@ -6,12 +6,15 @@ import theme from "./theme";
 
 //Components
 import NavigationBar from './navigationBar';
+import BackgroundMusic from './backgroundMusic';
  
 const Home = () => {
     return ( 
         <ThemeProvider theme={theme}>
             <NavigationBar textLabel="WhatNow?"  showBack="No"/>
-            <h1>hi</h1>
+            <BackgroundMusic />
+
+            <h1>.</h1>
             
 
         </ThemeProvider>
