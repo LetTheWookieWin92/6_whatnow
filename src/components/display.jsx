@@ -5,8 +5,6 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
 
 //Components
-import NavigationBar from "./navigationBar";
-import BackgroundMusic from "./backgroundMusic";
 import Home from "./home";
 import SearchResults from "./searchResults";
 
@@ -30,7 +28,7 @@ class Display extends Component {
 				return <Home onSelection={this.changeDisplayMode} />;
 
 			case "Search Results":
-				return <SearchResults onSelection={this.changeDisplayMode} />;
+				return <SearchResults title={mode} onBackPress={this.changeDisplayMode} />;
 
 			default:
 				return <h1>Nothing to see here</h1>;
@@ -40,9 +38,6 @@ class Display extends Component {
 	render() {
 		return (
 			<ThemeProvider theme={theme}>
-				<NavigationBar textLabel="WhatNow?" showBack="No" />
-				<BackgroundMusic />
-
 				{this.renderDisplayMode(this.state.displayMode)}
 			</ThemeProvider>
 		);

@@ -29,7 +29,7 @@ class BackgroundMusic extends Component {
 
         return ( 
             <Tooltip title="Play theme music">
-                <IconButton style={{alignSelf: 'center'}} color="primary" onClick={ () => this.playAudio()} aria-label="Play background music">
+                <IconButton edge="end" color="primary" onClick={ () => this.playAudio()} aria-label="Play background music">
                     <MusicNote />
                 </IconButton>
             </Tooltip>
